@@ -1,0 +1,145 @@
+body {
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  margin: auto;
+  text-align: center;
+}
+h1,
+p {
+  font-family: "Roboto", sans-serif;
+  display: inline;
+}
+.logo {
+  display: inline;
+  right: 0px;
+  width: 60px;
+  float: right;
+}
+.map {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  margin: 40px 0px;
+}
+
+.i-btn {
+  z-index: 99;
+  display: inline;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 20px;
+}
+.i-btn:hover {
+  cursor: pointer;
+}
+.i-text {
+  background-color: rgba(10, 10, 10, 0.2);
+  color: #000;
+  z-index: 99;
+  display: inline;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 0 20px;
+}
+.hide {
+  display: inline;
+  display: none;
+}
+
+/*POPUP*/
+.popup {
+  font-family: "Roboto", sans-serif;
+  z-index: 100;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 20px;
+  left: -49px;
+  width: 200px;
+  /*min-width: 250px;*/
+  text-align: center;
+}
+.popup:after,
+.popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.icons {
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.5rem;
+}
+.buttons {
+  margin: 10px auto;
+  width: 100%;
+}
+.btn {
+  background-color: #0afd99;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #0ca556;
+}
+
+h2 {
+  margin-top: 10px;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+}
+h3 {
+  margin: 0px;
+  padding: 10px 0;
+}
+ul {
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+}
+li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+li:hover {
+  cursor: pointer;
+  background-color: #3e926f;
+}
+.info-text {
+  display: none;
+}
+.show {
+  display: block;
+}
+.item p {
+  text-align: justify;
+  padding: 10px;
+}

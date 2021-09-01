@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <script src="./src/app.js" defer></script>
+    <script src="./src/app2.js" defer></script>
+    <title>IV Rajd Dolina Wrzesnicy</title>
+  </head>
+  <body>
+    <header>
+      <h1>IV Rajd Rowerowy Doliną Wrześnicy</h1>
+      <a href="http:\\www.projektwrzesnia.pl">
+        <img src="./src/img/logo_pw.png" class="logo" />
+      </a>
+    </header>
+  </body>
+
+  <div id="map" class="map">
+    <p id="iTxt" class="i-text hide">
+      &copy OpenStreetMap contributors<br>
+      &copy Icons from
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    made by
+    <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx"
+      >xnimrodx</a
+    >
+    <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+    <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+      >Smashicons</a
+    >
+    </p>
+    <button id="iBtn" class="i-btn">i</button>
+  </div>
+
+  <div id="popup" class="popup">text</div>
+
+<div>
+  <ul id = 'ulitems'>
+    <h2>Podręczny informator historyczny</h2>
+    <li class = 'item' id='lok-item'><h3>LOK</h3>
+        <p class = 'info-text' id='lok-text'>
+            Ogród Bractwa Kurkowego W 1918 roku Polska
+            odzyskała niepodległość po 123 latach niewoli. Sama Wrześni stała się natomiast
+            częścią odradzającego się państwa po zwycięskim Powstaniu Wielkopolskim, które
+            wybuchło 27 grudnia 1918 roku. W Powstanie Wielkopolskie zaangażowało się
+            wrzesińskie Bractwo Kurkowe (Strzeleckie), a następnie wzięło udział w walkach z
+            bolszewikami nad Wisłą w 1920 roku. Jedną najważniejszych pamiątek po Bractwie
+            jest strzelnica i ogród znajdujące się u zbiegu ulic Słowackiego i Ogrodowej.
+            Ten zabytek powstała w latach 1924-1925, a jego najbardziej charakterystycznym
+            punktem jest drewniana ośmioboczna altana z przeznaczeniem na występy orkiestry
+            wojskowej stacjonującego we Wrześni w okresie II Rzeczypospolitej 68 Pułku
+            Piechoty,
+        </p>
+    </li>
+    <li class = 'item' id='sedziwojewo-item'><h3>Sędziwojewo</h3>
+        <p class = 'info-text' id='sedziwojewo-text'>
+        Sędziwojewo – cmentarz ewangelicki W naszej okolicy znajduje się sporo
+        cmentarzy ewangelickich, które przypominają o tym, że kiedyś mieszkało tu sporo
+        Niemców wyznania ewangelickiego. Cmentarz w Sędziwojewie powstał w II połowie
+        XIX wieku i funkcjonował do końca II wojny światowej. Jest on usytuowany w
+        centrum wsi i znajduje się na nim kilkadziesiąt grobów. Obecnie można go
+        zobaczyć dzięki pracom porządkowym prowadzonymi przez Błażeja Śniegowskiego i
+        innych wolontariuszy.</p>
+    </li>
+    <li class = 'item' id='szemborowo-item'><h3>Szemborowo</h3>
+        <p class = 'info-text' id='szemborowo-text'>
+            Szemborowo W Szemborowie znajduje się zabytkowy kościół
+            św. Urszuli pochodzący z lat 1905-1907. . Obok kościoła stoi okazały,
+            klasycystyczny grobowiec rodziny Seweryna Chrzanowskiego – właściciela dóbr
+            rycerskich w Stanisławowie (ur. 7.11.1826, zm. 30.9.1887). Obok w grobowcu
+            został pochowany wraz z żoną Witold Jan Mościcki - najstarszy brat prezydenta
+            Rzeczypospolitej Polskiej Ignacego Mościckiego. W uroczystościach pogrzebowych
+            brata w dniu 27 kwietnia 1937 roku wziął udział prezydent Ignacy Mościcki. Wódki
+            W Wódkach znajduje się zabytkowy dwór z połowy XIX wieku (rozbudowany na
+            początku XX wieku) wraz z otaczającym go parkiem, folwarkiem i kaplicą grobową.
+            Przed wojną należał do rodziny Brzeskich.
+        </p>
+    </li>
+    <li class = 'item' id='grzybowo-item'><h3>Grzybowo</h3>
+        <p class = 'info-text' id='grzybowo-text'>
+            Grzybowo Początki państwa polskiego są
+            niezaprzeczalnie związane z olbrzymim grodziskiem piastowskim w Grzybowie. Gród
+            wzniesiono w latach 915–922. Był otoczony wałem mierzącym 16 m wysokości. W
+            trakcie budowy wału zużyto 90 tys. m³ drewna dębowego, tyle samo ziemi, gliny i
+            piasku. Obecnie wał na grodzisku w najwyższym miejscu sięga 9 m. Całkowita
+            powierzchnia grodziska wynosi 4,7 ha, a jego wnętrza 2,2 ha. W X wieku było to
+            jedno z największych grodzisk w Wielkopolsce i bez wątpienia musieli tutaj
+            rezydować poprzednicy Mieszka I i Bolesława Chrobrego, a niewykluczone że
+            również oni sami bywali w tym miejscu. Obecnie znajduje się tutaj Rezerwat
+            Archeologiczny – Gród w Grzybowie, wchodzący w skład Muzeum Pierwszych Piastów
+            na Lednicy. 
+        </p>
+    </li>
+    <h2>Podręczny informator przyrodniczy</h2>
+    <li class = 'item' id='rudnik-item'><h3>Rudnik</h3>
+    <p class = 'info-text' id='rudnik-text'>
+        Struga Rudnik Obok grzybowskiego grodu
+        przepływa Struga Rudnik. Początek bierze w okolicach Niechanowa, a uchodzi do
+        Strugi Bawół w okolicach miejscowości Unia na terenie gminy Strzałkowo. Z kolei
+        Struga Bawół wpada do Meszny (niedaleko Słupcy), a Meszna do Warty. Struga
+        Rudnik przepływa między innymi przez Wódki, Grzybowo, Gutowo Wielkie, Węgierki i
+        Gonice. Jej długość wynosi około 28 km. 
+    </p>
+  </li>
+    <li class = 'item' id='wrzesnica-item'><h3>Wrzesnica</h3>
+    <p class = 'info-text' id='wrzesnica-text'>
+        Wrześnica bierze swój
+        początek na Pojezierzu Wielkopolskim w miejscowości Piekary pod Gnieznem na
+        wysokości 112 m n.p.m. Nie jest to jednak obszar źródliskowy tej rzeki.
+        Początkowo brała ona swój początek z wytopiska po martwym lodzie rozciągającego
+        się obecnie po obu stronach toru kolejowego Poznań-Gniezno, powyżej wsi Pawłowo.
+        Obszary położone powyżej wytopiska zostały dołączone do dorzecza Wrześnicy przez
+        przekopanie w latach 1888- 1905 rowu odwadniającego liczne tam zagłębienia
+        bezodpływowe. Wrześnica uchodzi do Warty koło wsi Samarzewo na wysokości 72 m
+        n.p.m. Różnica pomiędzy wysokością źródła, a ujściem wynosi około 40 m.
+        Największym dopływem Wrześnicy jest Mała Wrześnica o długości 12,9 km. Obie
+        rzeki łączą się w miejscowości Noskowo. 
+    </p>
+</li>
+<h2>Podręczny informator rowerowy</h2>
+    <li class = 'item' id=rower-item'><h3>Porady rowerowe</h3>
+    <p class = 'info-text' id='rower-text'>
+        1. Zadbaj o odpowiednie ciśnienie w oponach, dobrze napompowane koła lepiej się toczą
+        (informacje o odpowiednim ciśnieniu opon są wytłoczone na boku opony) 
+        <br>
+        2. Świecące światła przednie i zapewnią ci lepszą widoczność przez innych
+        uczestników ruchu 
+        <br>
+        3. Jeden kilometr przejechany na rowerze to 36,7g dwutlenku mniej
+        w porównaniu do auta 
+        <br>
+        4. Jazda rowerem to także oszczędności dla twojego
+        portfela, dojeżdżając codziennie 10 km do pracy to oszczędność 175 zł/mc. 
+        <br>
+        5. Przed dłuższą jazdą nie zapomnij o rozgrzewce, podstawowe ćwiczenia takie jak,
+        skłony i przysiady pomogą uniknąć kontuzji. 
+        <br>
+        6. Przynajmniej 30 minut jazdy
+        rowerem dziennie pozytywnie wpływa na łatwość zasypiania (wg badań naukowców ze
+        Stanford University School of Medicine)
+        <br> 
+        7. Regularne czyszczenie i smarowanie
+        łańcucha sprawi, że z łatwością pokonamy kolejne kilometry. Wydobywające się
+        dziwne dźwięki z okolic łańcucha to znak, że już dawno powinien być
+        wyczyszczony! 
+        <br>
+        8. Zmieniając przełożenia rób to wtedy, gdy nie naciskasz mocno na
+        pedały, przewiduj zmianę biegu i dostosuj do niej prędkość. 
+        <br>
+        9. Pamiętaj o
+        poprawnej zmianie przełożenia, przykładowo mając 3 przełożenia z przodu i 7
+        przełożeń z tyłu używaj takich par przełożeń: z przodu 1, to z tyłu 1-2-3; z
+        przodu 2, to z tyłu 3-4-5; z przodu 3, to z tyłu 5-6-7. 
+        <br>
+        10. Nie zapomnij o
+        odpowiednim nawodnieniu organizmu w trakcie i po jeździe, godzinna przejażdżka
+        może ”kosztować” twój organizm nawet 1.5l wody.
+    </p>
+</li>
+</ul>
+</div>
+</html>
